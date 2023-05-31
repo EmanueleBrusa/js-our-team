@@ -30,7 +30,32 @@ const listaTeam = [
     ruolo: 'Graphic Designer',
     fotoProfilo: 'barbara-ramos-graphic-designer.jpg'
 },
-]
+];
 
 // stampo a console come richiesto dalla milestone 1
-console.log(listaTeam)
+//console.log(listaTeam);
+
+//proseguo con la seconda milestone
+
+//recupero il contenitore per le cards
+const cards_container = document.getElementById('container');
+
+//creo un ciclo per visualizzare le foto 
+for (let i = 0; i < listaTeam.length; i++) {
+    //salvo l'array in una variabile
+    let team = listaTeam[i];
+
+    //stampo nella console per test
+    //console.log(team)
+
+    //creo l'elemento del dom che conterrà le informazioni delle card
+    let card = `<div class="card">
+        <p>${team.fotoProfilo}</p>
+        <p>${team.nome}</p>
+        <p>${team.ruolo}</p>
+    </div>`
+
+    //concateno la card con le info
+    cards_container.innerHTML += card; 
+
+};
