@@ -1,3 +1,4 @@
+// creo l'array con gli oggetti 
 const listaTeam = [
 {
     nome: 'Wayne Barnett',
@@ -31,4 +32,5 @@ const listaTeam = [
 },
 ]
 
+// stampo a console come richiesto dalla milestone 1
 console.log(listaTeam)
